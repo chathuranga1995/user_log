@@ -11,12 +11,12 @@
 <body>
 	<div class="container-fluid" >
 		<div class="row">
-			<div class="text-center">
+			<div class="text-center" style="background: gray;padding-top: 5px;padding-bottom: 5px;">
 				<h1>Welcome!</h1>
 			</div>
 		</div>
 		<br><br><br><br>
-		<form action="logged_in.php" method="post"> 
+		<form action="userCheck.php" method="post"> 
 		<div class="row"> 
 			<div class="col-md-4" >
 				
@@ -25,7 +25,7 @@
 				<h4>User name:</h4>
 			</div>
 			<div class="col-md-2" >
-				<input class="form-control small" type="text" name="" placeholder="User name">
+				<input class="form-control small" type="text" name="userName" placeholder="User name">
 			</div>
 			<div class="col-md-4">
 			</div>
@@ -38,7 +38,7 @@
 				<h4>Password :</h4>
 			</div>
 			<div class="col-md-2" >
-				<input class="form-control small" type="text" name="" placeholder="Password">
+				<input class="form-control small" type="password" name="password" placeholder="Password">
 			</div>
 			<div class="col-md-4">
 			</div>
