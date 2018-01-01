@@ -6,6 +6,65 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
       <!-- Bootstrap --> 
 	<link href="css/bootstrap.min.css" rel="stylesheet"> 
+	<script type="text/javascript">
+	   <!--
+	      // Form validation code will come here.
+	      function validate()
+	      {
+	      
+	         if( document.myForm.userName.value == "" )
+	         {
+	            alert( "Please provide your name!" );
+	            document.myForm.userName.focus() ;
+	            return false;
+	         }
+	         
+	         if( document.myForm.password.value == "" )
+	         {
+	            alert( "Please choose password!" );
+	            document.myForm.password.focus() ;
+	            return false;
+	         }
+
+	         if( document.myForm.password.value.length<5 )
+	         {
+	            alert( "Please choose more strength password!" );
+	            document.myForm.password.focus() ;
+	            return false;
+	         }
+
+	         if( document.myForm.Cpassword.value != document.myForm.password.value )
+	         {
+	            alert( "Password should be matched!" );
+	            document.myForm.Cpassword.focus() ;
+	            return false;
+	         }
+
+	         if(document.myForm.age.value==""){
+	         	alert("Age should be filled!");
+	         	document.myForm.age.focus() ;
+	         	return false;
+	         }
+
+	         if(document.myForm.email.value==""){
+	         	alert("email should be filled!");
+	         	document.myForm.email.focus() ;
+	         	return false;
+	         }
+
+	         if(document.myForm.nic.value==""){
+	         	alert("NIC should be filled!");
+	         	document.myForm.nic.focus() ;
+	         	return false;
+	         }
+ 			return true;
+	      }
+	   //-->
+	   function isNumeric(n) {
+		    return !isNaN(parseFloat(n)) && isFinite(n);
+	   }
+	</script>
+
 
 </head>
 <body>
@@ -14,7 +73,7 @@
 			<h2 style="color: blue;">Sign up free!</h2>
 		</div>
 		<br><br><br>
-		<form action="insert.php" method="post">
+		<form name="myForm" onsubmit="return validate()" action="insert.php" method="post">
 			<div class="row">
 				<div class="col-md-2">
 					<h4>user name:</h4>

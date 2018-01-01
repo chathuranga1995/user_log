@@ -5,6 +5,29 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
       <!-- Bootstrap --> 
 	<link href="css/bootstrap.min.css" rel="stylesheet"> 
+	<script type="text/javascript">
+	   <!--
+	      // Form validation code will come here.
+	      function validate()
+	      {
+	      
+	         if( document.myForm.userName.value == "" )
+	         {
+	            alert( "Please provide your user name!" );
+	            document.myForm.userName.focus() ;
+	            return false;
+	         }
+	         
+	         if( document.myForm.password.value == "" )
+	         {
+	            alert( "Please provide your password!" );
+	            document.myForm.password.focus() ;
+	            return false;
+	         }
+ 			return true;
+	      }
+	   //-->
+	</script>
 
 	<title></title>
 </head>
@@ -16,7 +39,7 @@
 			</div>
 		</div>
 		<br><br><br><br>
-		<form action="userCheck.php" method="post"> 
+		<form name="myForm"  onsubmit="return validate()" action="userCheck.php" method="post"> 
 		<div class="row"> 
 			<div class="col-md-4" >
 				
