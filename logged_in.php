@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,11 +10,14 @@
 
 </head>
 <body>
-	<div class="row">
-		<div class="text-center">
-			<h2>Successfully logged!!</h2>
+
+	<div class="container-fluid">
+		
+		<div class="row">
+			<?php include('navbar.php'); ?>
 		</div>
 	</div>
+
 
 	 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
       <script src="https://code.jquery.com/jquery.js"></script>

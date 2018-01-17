@@ -13,9 +13,9 @@
 	if(!$num==0){
 		 //echo $row[0];
 		if($password==$row[0]){
-			 echo $password;
 			header("Location:logged_in.php");
 		}else{
+ 
 			header("Location:sign_in1.php");
 		}
 	}

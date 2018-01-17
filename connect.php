@@ -5,8 +5,8 @@
 	if(!$dbc){
 		die('Not connected!:'.mysqli_error($dbc));
 	 }else{
-	 	echo "working database!"."</br>";  
-	 	echo "redirecting!!"."</br>";
+	 	//echo "working database!"."</br>";  
+	 	//echo "redirecting!!"."</br>";
 	 }
 
 	 if(!mysqli_select_db($dbc,'union')){

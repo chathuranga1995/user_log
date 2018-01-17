@@ -35,11 +35,12 @@
 	<div class="container-fluid" >
 		<div class="row">
 			<div class="text-center" style="background: gray;padding-top: 5px;padding-bottom: 5px;">
-				<h1>Welcome!</h1>
+				<h1>Welcome to the Union!</h1>
 			</div>
 		</div>
 		<br><br><br><br>
-		<form name="myForm"  onsubmit="return validate()" action="userCheck.php" method="post"> 
+
+		<form name="myForm" id="myForm"   action="userCheck.php" method="post">  <!-- onsubmit="return validate()" -->
 		<div class="row"> 
 			<div class="col-md-4" >
 				
@@ -47,10 +48,10 @@
 			<div class="col-md-2" >
 				<h4>User name:</h4>
 			</div>
-			<div class="col-md-2" >
+			<div class="col-md-3" >
 				<input class="form-control small" type="text" name="userName" placeholder="User name">
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-3">
 			</div>
 		</div>
 		<div class="row"> 
@@ -60,10 +61,10 @@
 			<div class="col-md-2" >
 				<h4>Password :</h4>
 			</div>
-			<div class="col-md-2" >
+			<div class="col-md-3" >
 				<input class="form-control small" type="password" name="password" placeholder="Password">
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-3">
 			</div>
 		</div>
 		<div class="row"> 
@@ -88,16 +89,53 @@
 				
 			</div>
 			<div class="col-md-6">
-				<a href="">Forgot your password?</a>
+				<a href="request.php">Forgot your password?</a>
 			</div>
 		</div>
 	</div>
+	<script
+	  src="http://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous">
+	  </script>
+	  <!-- jquery plugins for validations -->
+	  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"> </script>
+ 	<script type="text/javascript">
+ 		$(document).ready(function(){
+ 			$("#myForm").validate({
+ 				rules: {
+ 					userName:{
+ 						required:true,
+ 						minlength:4
 
+ 					},
+ 					password:{
+ 						required:true,
+ 						minlength:5
+ 					} 
+ 				},
+ 				messages:{
+ 					userName:{
+ 						required:"user name is required!",
+ 	
+ 					},
+ 					password:{
+ 						required:"password is required!",
+ 						 
+ 					} 
+ 				}
+
+
+ 			});
+ 		});
+
+
+ 	</script>	
 
 
 	 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-      <script src="https://code.jquery.com/jquery.js"></script>
+      <!-- <script src="https://code.jquery.com/jquery.js"></script> -->
       <!-- Include all compiled plugins (below), or include individual files as needed --> 
-      <script src="js/bootstrap.min.js"></script> 
+   <!--    <script src="js/bootstrap.min.js"></script>  -->
 </body>
 </html>

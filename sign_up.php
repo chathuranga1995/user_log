@@ -60,10 +60,10 @@
  			return true;
 	      }
 	   //-->
-	   function isNumeric(n) {
+	  <!--  function isNumeric(n) {
 		    return !isNaN(parseFloat(n)) && isFinite(n);
 	   }
-	</script> -->
+	</script> -->  
 	 
 
 
@@ -147,6 +147,14 @@
 				</div>
 			</div> <!-- row -->
 		</form> <!-- end of form -->
+		<div class="row">
+			<div class="col-md-2">
+				
+			</div>
+			<div class="col-md-10">
+				<a href="sign_in1.php">Already have a account??</a>
+			</div>
+		</div> <!-- row -->
 		
 	</div> <!-- container -->
 	
