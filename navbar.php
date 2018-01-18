@@ -1,11 +1,3 @@
-<?php 
-
-
-
-
-
- ?>
-
 
 <!DOCTYPE html>
 <html>
@@ -24,7 +16,7 @@
       <a class="navbar-brand" href="#">Union</a>  
     </div>  
     <ul class="nav navbar-nav" >  
-      <li><a href="test2.html">Home</a></li>  
+      <li><a href="logged_in.php">Home</a></li>  
       <li><a href="profile.php">Profile</a></li>  
       <li><a href="#">Page 2</a></li>  
       <li><a href="#">Page 3</a></li>  

@@ -6,7 +6,7 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet"> 
 	<title>request username password</title>
 </head>
-<body>
+<body background="images/5e8619a55304979adc901b17f19d559c.jpg">
 	<div class="container-fluid">
 	<form name="" method="post" action="sendMail.php">
 		<div class="text-center">
@@ -16,7 +16,7 @@
 		<div class="row text-center">
 			<div class="col-md-4"></div>
 			<div class="col-md-2">
-				<h4>username:</h4>
+				<h4 style="color: lightgreen">username:</h4>
 			</div>
 			<div class="col-md-3">
 				<input class="form-control small" type="text" name="username">

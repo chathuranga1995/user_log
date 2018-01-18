@@ -9,12 +9,25 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet"> 
 
 </head>
-<body>
+<body background="images/5e8619a55304979adc901b17f19d559c.jpg">
 
 	<div class="container-fluid">
 		
 		<div class="row">
 			<?php include('navbar.php'); ?>
+
+		</div>
+		<div style="color: red; font-size: 25px;" class="row">
+			<div class="text-center">
+				<?php 
+					session_start();
+					echo "Welcome ".$_SESSION['userName'];
+
+					//header("location:")
+
+				 ?>
+			</div>
+			
 		</div>
 	</div>
 

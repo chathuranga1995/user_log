@@ -24,12 +24,12 @@
    $mail ->SMTPDebug = 2;
    $mail ->SMTPAuth = true;
    $mail ->SMTPSecure = 'ssl';
-   $mail ->Host = "smtp.yahoo.com";
+   $mail ->Host = "smtp.gmail.com";
    $mail ->Port = 465; // or 587
    $mail ->IsHTML(true);
-   $mail ->Username = "dinuka.chathuranga@yahoo.com";
+   $mail ->Username = "dinukachathura@gmail.com";
    $mail ->Password = "drck20141995";
-   $mail ->SetFrom("dinuka.chathuranga@yahoo.com");
+   $mail ->SetFrom("dinukachathura@gmail.com");
    $mail ->Subject = $mailSub;
    $mail ->Body = $mailMsg;
    $mail ->AddAddress($mailto);

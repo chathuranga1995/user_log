@@ -31,7 +31,7 @@
 
 	<title></title>
 </head>
-<body>
+<body background="images/5e8619a55304979adc901b17f19d559c.jpg">
 	<div class="container-fluid" >
 		<div class="row">
 			<div class="text-center" style="background: gray;padding-top: 5px;padding-bottom: 5px;">
@@ -46,7 +46,7 @@
 				
 			</div>
 			<div class="col-md-2" >
-				<h4>User name:</h4>
+				<h4 style="color: lightgreen">User name:</h4>
 			</div>
 			<div class="col-md-3" >
 				<input class="form-control small" type="text" name="userName" placeholder="User name">
@@ -59,7 +59,7 @@
 				
 			</div>
 			<div class="col-md-2" >
-				<h4>Password :</h4>
+				<h4 style="color: lightgreen">Password :</h4>
 			</div>
 			<div class="col-md-3" >
 				<input class="form-control small" type="password" name="password" placeholder="Password">
